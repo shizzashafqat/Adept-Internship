@@ -1,0 +1,112 @@
+
+GitHub Cheatsheet
+INSTALLATION:
+1. GitHub Desktop: https://desktop.github.com
+2. Git for All Platforms: https://git-scm.com
+
+CONFIGURE TOOLING:
+- Set global configuration for user name:
+  $ git config --global user.name "[name]"
+  
+- Set global configuration for user email:
+  $ git config --global user.email "[email address]"
+
+- Enable colorization of command line output:
+  $ git config --global color.ui auto
+
+BRANCHES:
+- Create a new branch:
+  $ git branch [branch-name]
+
+- Switch to a branch and update the working directory:
+  $ git switch -c [branch-name]
+
+- Merge a branch into the current branch:
+  $ git merge [branch]
+
+- Delete a branch:
+  $ git branch -d [branch-name]
+
+CREATE REPOSITORIES:
+- Initialize a new Git repository in the current directory:
+  $ git init
+
+- Add remote repository URL to local repository:
+  $ git remote add origin [url]
+
+- Clone a repository including all files, branches, and commits:
+  $ git clone [url]
+
+ .gitignore:
+- Exclude files from being tracked with Git. More templates available at:
+  https://github.com/github/gitignore
+
+SYNCHRONIZE CHANGES:
+- Fetch all history from the remote tracking branches:
+  $ git fetch
+
+- Combine remote tracking branches into the current branch:
+  $ git merge
+
+- Upload all local branch commits to GitHub:
+  $ git push
+
+- Update local working branch with all new commits:
+  $ git pull
+
+MAKE CHANGES:
+- List version history for the current branch:
+  $ git log
+
+- Show content differences between two branches:
+  $ git diff [first-branch]...[second-branch]
+
+- Output metadata and content changes of a specific commit:
+  $ git show [commit]
+
+- Stage a file for versioning:
+  $ git add [file]
+
+- Record file snapshots permanently in version history:
+  $ git commit -m "[descriptive message]"
+
+REDO COMMITS:
+- Undo all commits after the specified commit, preserving local changes:
+  $ git reset [commit]
+
+- Discard all history and changes back to the specified commit:
+  $ git reset --hard [commit]
+
+ADDITIONAL COMMANDS:
+- List all configured remotes:
+  $ git remote -v
+
+- Remove a remote:
+  $ git remote remove [remote-name]
+
+- List all stashes:
+  $ git stash list
+
+- Apply a specific stash:
+  $ git stash apply stash@{n}
+
+- Abort a merge:
+  $ git merge --abort
+
+- Checkout a specific commit for a file:
+  $ git checkout [commit-id] -- [file]
+
+- Clean the working directory:
+  $ git clean -fd
+
+GLOSSARY:
+- git: Distributed version-control system for tracking changes.
+- GitHub: Platform for hosting and collaborating on Git repositories.
+- commit: Snapshot of your entire repository at a certain point.
+- branch: Lightweight movable pointer to a commit.
+- clone: Local version of a repository, including all commits and branches.
+- remote: Common repository on GitHub for all team members.
+- fork: Copy of a repository owned by another user.
+- pull request: Method for discussing changes before merging them.
+- HEAD: Pointer representing your current working directory.
+
